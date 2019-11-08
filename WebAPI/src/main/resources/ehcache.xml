@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache>
+    <diskStore path="java.io.tmpdir" />
+
+    <defaultCache maxElementsInMemory="1" eternal="false"
+                  timeToIdleSeconds="10000" timeToLiveSeconds="60000" overflowToDisk="false" />
+    <cache name="entity.Product" maxElementsInMemory="6000" />
+</ehcache>
