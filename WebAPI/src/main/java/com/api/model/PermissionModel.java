@@ -11,15 +11,18 @@ public class PermissionModel {
 	public PermissionModel() {
 	}
 
-	public PermissionModel(Integer id, String name) {
+	public PermissionModel(Integer id, String name, String code) {
 		this.id = id;
 		this.name = name;
+		this.code = code;
 	}
 	
 	private Integer id;
 	
 	private String name;
 
+	private String code;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -36,6 +39,14 @@ public class PermissionModel {
 		this.name = name;
 	}
 
+	public String getCode() {
+		return code;
+	}
+
+
+	public void setCode(String code) {
+		this.code = code;
+	}
 
 	
 	

@@ -23,16 +23,19 @@ public class RoleModel {
 	}
 
 
-	public RoleModel(Integer id, String name) {
+	public RoleModel(Integer id, String name, String code) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.code = code;
 	}
 	
 	private Integer id;
 	
 	private String name;
 
+	private String code;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -53,6 +56,16 @@ public class RoleModel {
 	}
 
 
+	public String getCode() {
+		return code;
+	}
+
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	
 	
 	
 }

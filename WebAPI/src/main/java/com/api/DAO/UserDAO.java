@@ -135,7 +135,7 @@ public class UserDAO {
 	
 	public List<PermissionModel> GetPerUser(int userId) {
 		Session session = this.sessionFactory.getCurrentSession();
-		String hql = "select distinct(per.id) , per.name FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId";
+		String hql = "select distinct(per.id) , per.name, per.code FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId";
 		Query query = session.createQuery(hql);
 		query.setParameter("userId", userId);
 		List<Object[]> lstPer = query.list();
@@ -143,7 +143,7 @@ public class UserDAO {
 		if(lstPer.size() > 0) {
 			PermissionModel pm;
 			for (Object[] obj : lstPer) {
-				pm = new PermissionModel((int)obj[0], obj[1].toString());
+				pm = new PermissionModel((int)obj[0], obj[1].toString(), obj[2].toString());
 				lstPerModel.add(pm);
 			}
 		}
@@ -153,7 +153,7 @@ public class UserDAO {
 	
 	public List<ControlModel> GetListControlUser(int userId){
 		Session session = this.sessionFactory.getCurrentSession();
-		String hql = "select c.id, c.name FROM Control c where c.permission.id in (select distinct(per.id) FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId)";
+		String hql = "select c.id, c.name, c.code FROM Control c where c.permission.id in (select distinct(per.id) FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId)";
 		
 		Query query = session.createQuery(hql);
 		query.setParameter("userId", userId);
@@ -162,7 +162,7 @@ public class UserDAO {
 		if(lstControl.size() > 0) {
 			ControlModel controlModel;
 			for (Object[] obj : lstControl) {
-				controlModel = new ControlModel((int)obj[0], obj[1].toString());
+				controlModel = new ControlModel((int)obj[0], obj[1].toString(), obj[2].toString());
 				lstControlModel.add(controlModel);
 			}
 		}	

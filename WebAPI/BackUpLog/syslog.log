@@ -1,560 +1,664 @@
-2019-11-08 20:00:58.563  INFO 15036 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 15036 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:00:58.568  INFO 15036 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:00:59.326  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:00:59.327  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:00:59.350  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-11-08 20:00:59.364  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:00:59.365  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:00:59.380  INFO 15036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-2019-11-08 20:00:59.700  INFO 15036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$d0afaa4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:00:59.745  INFO 15036 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:00:59.771  INFO 15036 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c17e550] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:01:00.025  INFO 15036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:01:00.049  INFO 15036 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:01:00.050  INFO 15036 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:01:00.320  INFO 15036 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:01:00.320  INFO 15036 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1709 ms
-2019-11-08 20:01:00.512  INFO 15036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:01:00.515  INFO 15036 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:01:00.516  INFO 15036 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:01:00.575  INFO 15036 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:01:01.596  INFO 15036 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:01:02.883  INFO 15036 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:01:03.435  INFO 15036 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:01:03.440  INFO 15036 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 5.222 seconds (JVM running for 6.16)
-2019-11-08 20:01:07.275  INFO 15036 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:01:07.276  INFO 15036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:01:07.291  INFO 15036 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2019-11-08 20:01:54.028  INFO 14980 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 14980 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:01:54.032  INFO 14980 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:01:54.745  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:01:54.746  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:01:54.769  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2019-11-08 20:01:54.781  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:01:54.782  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:01:54.795  INFO 14980 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-2019-11-08 20:01:55.076  INFO 14980 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2ae5afc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:01:55.107  INFO 14980 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:01:55.134  INFO 14980 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$864deac4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:01:55.365  INFO 14980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:01:55.385  INFO 14980 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:01:55.386  INFO 14980 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:01:55.497  INFO 14980 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:01:55.497  INFO 14980 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1432 ms
-2019-11-08 20:01:55.657  INFO 14980 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:01:55.660  INFO 14980 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:01:55.661  INFO 14980 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:01:55.712  INFO 14980 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:01:56.341  INFO 14980 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:01:57.356  INFO 14980 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:01:57.832  INFO 14980 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:01:57.836  INFO 14980 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.132 seconds (JVM running for 5.246)
-2019-11-08 20:02:02.642  INFO 14980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:02:02.643  INFO 14980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:02:02.653  INFO 14980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-11-08 20:03:50.578  INFO 12140 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 12140 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:03:50.581  INFO 12140 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:03:51.237  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:03:51.238  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:03:51.263  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
-2019-11-08 20:03:51.277  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:03:51.278  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:03:51.292  INFO 12140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-2019-11-08 20:03:51.577  INFO 12140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3fdb971f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:03:51.606  INFO 12140 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:03:51.632  INFO 12140 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9b43d220] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:03:51.870  INFO 12140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:03:51.892  INFO 12140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:03:51.893  INFO 12140 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:03:51.997  INFO 12140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:03:51.997  INFO 12140 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1360 ms
-2019-11-08 20:03:52.150  INFO 12140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:03:52.152  INFO 12140 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:03:52.153  INFO 12140 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:03:52.198  INFO 12140 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:03:52.799  INFO 12140 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:03:53.698  INFO 12140 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:03:54.167  INFO 12140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:03:54.170  INFO 12140 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 3.919 seconds (JVM running for 4.756)
-2019-11-08 20:04:00.556  INFO 12140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:04:00.560  INFO 12140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:04:00.571  INFO 12140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-11-08 20:11:49.481  INFO 22756 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 22756 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:11:49.485  INFO 22756 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:11:50.105  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:11:50.106  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:11:50.130  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
-2019-11-08 20:11:50.142  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:11:50.144  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:11:50.158  INFO 22756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
-2019-11-08 20:11:50.443  INFO 22756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ea672f8b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:11:50.471  INFO 22756 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:11:50.494  INFO 22756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$45cf6a8c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:11:50.728  INFO 22756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:11:50.750  INFO 22756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:11:50.750  INFO 22756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:11:50.850  INFO 22756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:11:50.850  INFO 22756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1329 ms
-2019-11-08 20:11:51.017  INFO 22756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:11:51.019  INFO 22756 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:11:51.021  INFO 22756 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:11:51.081  INFO 22756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:11:51.826  INFO 22756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:11:52.722  INFO 22756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:11:53.197  INFO 22756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:11:53.201  INFO 22756 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.032 seconds (JVM running for 4.843)
-2019-11-08 20:11:59.234  INFO 22756 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:11:59.235  INFO 22756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:11:59.244  INFO 22756 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-11-08 20:21:28.522  INFO 14428 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 14428 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:21:28.529  INFO 14428 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:21:29.164  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:21:29.164  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:21:29.187  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2019-11-08 20:21:29.198  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:21:29.199  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:21:29.211  INFO 14428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019-11-08 20:21:29.492  INFO 14428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3936ebc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:21:29.521  INFO 14428 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:21:29.553  INFO 14428 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$949f26c5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:21:29.784  INFO 14428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:21:29.804  INFO 14428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:21:29.805  INFO 14428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:21:29.904  INFO 14428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:21:29.905  INFO 14428 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1340 ms
-2019-11-08 20:21:30.069  INFO 14428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:21:30.072  INFO 14428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:21:30.073  INFO 14428 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:21:30.123  INFO 14428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:21:30.769  INFO 14428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:21:31.710  INFO 14428 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:21:32.208  INFO 14428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:21:32.214  INFO 14428 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.026 seconds (JVM running for 4.822)
-2019-11-08 20:21:35.951  INFO 14428 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:21:35.957  INFO 14428 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:21:35.978  INFO 14428 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
-2019-11-08 20:22:02.227  INFO 14428 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 20:30:42.571  INFO 14428 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 20:30:47.190  WARN 14428 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 20:30:47.206  INFO 14428 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 20:30:49.592  INFO 14428 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:30:49.717  INFO 14428 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:32:53.840  INFO 14428 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 20:33:50.794  WARN 14428 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 20:33:50.800  INFO 14428 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 20:33:52.961  INFO 14428 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:33:53.069  INFO 14428 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:34:33.258  INFO 14428 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:34:33.282  INFO 14428 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:34:37.012  INFO 14428 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:34:37.024  INFO 14428 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:34:38.573  INFO 14428 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:34:38.586  INFO 14428 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:34:41.227  INFO 14428 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:34:41.241  INFO 14428 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:38:00.013  INFO 14148 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 14148 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:38:00.021  INFO 14148 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:38:00.746  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:38:00.747  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:38:00.777  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
-2019-11-08 20:38:00.796  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:38:00.798  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:38:00.821  INFO 14148 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-2019-11-08 20:38:01.163  INFO 14148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$5174c2d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:38:01.193  INFO 14148 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:38:01.225  INFO 14148 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$acdcfdd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:38:01.483  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:38:01.513  INFO 14148 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:38:01.514  INFO 14148 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:38:01.617  INFO 14148 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:38:01.617  INFO 14148 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1547 ms
-2019-11-08 20:38:01.785  INFO 14148 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:38:01.787  INFO 14148 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:38:01.788  INFO 14148 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:38:01.837  INFO 14148 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:38:02.480  INFO 14148 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:38:03.411  INFO 14148 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:38:03.963  INFO 14148 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:38:03.966  INFO 14148 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.385 seconds (JVM running for 5.219)
-2019-11-08 20:38:05.866  INFO 14148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:38:05.868  INFO 14148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:38:05.878  INFO 14148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-11-08 20:38:25.181  INFO 14148 --- [http-nio-8080-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 20:38:25.346  INFO 14148 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 20:38:28.480  WARN 14148 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 20:38:28.493  INFO 14148 --- [http-nio-8080-exec-9] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 20:38:31.011  INFO 14148 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:38:31.033  INFO 14148 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:38:43.889  INFO 14148 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-11-08 20:38:43.899  INFO 14148 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:38:54.994  INFO 13328 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 13328 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 20:38:54.996  INFO 13328 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 20:38:55.623  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:38:55.623  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:38:55.643  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
-2019-11-08 20:38:55.654  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 20:38:55.655  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 20:38:55.666  INFO 13328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
-2019-11-08 20:38:55.915  INFO 13328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$667907d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:38:55.940  INFO 13328 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 20:38:55.961  INFO 13328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1e142d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 20:38:56.160  INFO 13328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 20:38:56.181  INFO 13328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 20:38:56.181  INFO 13328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 20:38:56.279  INFO 13328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 20:38:56.279  INFO 13328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1252 ms
-2019-11-08 20:38:56.419  INFO 13328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 20:38:56.421  INFO 13328 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 20:38:56.422  INFO 13328 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 20:38:56.463  INFO 13328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 20:38:57.079  INFO 13328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 20:38:57.840  INFO 13328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 20:38:58.229  INFO 13328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 20:38:58.232  INFO 13328 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 3.503 seconds (JVM running for 4.204)
-2019-11-08 20:39:01.692  INFO 13328 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 20:39:01.693  INFO 13328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 20:39:01.701  INFO 13328 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-11-08 20:39:01.802  INFO 13328 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 20:39:02.009  INFO 13328 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:39:02.114  INFO 13328 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:42:51.204  INFO 13328 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 20:42:51.331  INFO 13328 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 20:43:35.870  INFO 13328 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-11-08 20:43:35.878  INFO 13328 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-08 21:55:46.216  INFO 21884 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 21884 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 21:55:46.218  INFO 21884 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 21:55:47.229  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 21:55:47.230  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 21:55:47.253  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
-2019-11-08 21:55:47.263  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 21:55:47.264  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 21:55:47.277  INFO 21884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-2019-11-08 21:55:47.543  INFO 21884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$4d251886] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 21:55:47.650  INFO 21884 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 21:55:47.699  INFO 21884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a88d5387] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 21:55:47.929  INFO 21884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 21:55:47.951  INFO 21884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 21:55:47.951  INFO 21884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 21:55:48.154  INFO 21884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 21:55:48.156  INFO 21884 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1792 ms
-2019-11-08 21:55:48.351  INFO 21884 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 21:55:48.354  INFO 21884 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 21:55:48.355  INFO 21884 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 21:55:48.414  INFO 21884 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 21:55:49.652  INFO 21884 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 21:55:50.763  INFO 21884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 21:55:51.542  INFO 21884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 21:55:51.545  INFO 21884 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 5.675 seconds (JVM running for 6.899)
-2019-11-08 21:56:04.235  INFO 21884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 21:56:04.236  INFO 21884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 21:56:04.244  INFO 21884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-11-08 21:56:04.429  INFO 21884 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 21:56:04.573  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 21:56:07.508  WARN 21884 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 21:56:07.521  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 21:56:12.075  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 21:56:12.097  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 21:57:08.015  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 21:57:11.326  WARN 21884 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 21:57:11.331  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 21:57:14.597  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 21:57:14.614  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 21:57:21.713  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 21:57:21.728  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 21:57:35.534  WARN 21884 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 21:57:35.540  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 21:57:38.124  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 21:57:38.137  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 21:58:26.498  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 21:58:29.261  WARN 21884 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 21:58:29.264  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 21:58:35.782  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 21:58:35.796  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:06.638  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:06.658  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:07.722  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:07.812  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:08.312  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:08.326  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:08.757  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:08.859  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:09.294  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:09.307  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:09.805  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:01:09.821  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:16.028  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:01:16.055  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:01:42.774  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:01:42.788  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:02:21.038  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:02:21.050  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:03:14.030  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:03:14.041  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:03:23.071  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:03:23.085  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:03:58.129  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:03:58.177  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:05:19.030  INFO 21884 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:05:19.041  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:05:23.813 ERROR 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : For input string: ""
-2019-11-08 22:05:30.079  INFO 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:05:30.092  INFO 21884 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:05:50.189  INFO 21884 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:05:50.201  INFO 21884 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:06:40.808 ERROR 21884 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : For input string: ""
-2019-11-08 22:07:00.590  INFO 21884 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-11-08 22:07:00.597  INFO 21884 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-08 22:07:05.995  INFO 11764 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 11764 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 22:07:05.998  INFO 11764 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 22:07:06.802  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:07:06.803  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:07:06.826  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
-2019-11-08 22:07:06.838  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:07:06.840  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:07:06.854  INFO 11764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
-2019-11-08 22:07:07.192  INFO 11764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$8e22c0d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:07:07.222  INFO 11764 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 22:07:07.247  INFO 11764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e98afbd6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:07:07.489  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 22:07:07.521  INFO 11764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 22:07:07.522  INFO 11764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 22:07:07.630  INFO 11764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 22:07:07.630  INFO 11764 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1578 ms
-2019-11-08 22:07:07.787  INFO 11764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 22:07:07.789  INFO 11764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 22:07:07.790  INFO 11764 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 22:07:07.836  INFO 11764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 22:07:08.494  INFO 11764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 22:07:09.592  INFO 11764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 22:07:10.096  INFO 11764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 22:07:10.100  INFO 11764 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.447 seconds (JVM running for 5.369)
-2019-11-08 22:07:16.206  INFO 11764 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 22:07:16.207  INFO 11764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 22:07:16.216  INFO 11764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-11-08 22:07:30.668  INFO 11764 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 22:07:38.083 ERROR 11764 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : For input string: ""
-2019-11-08 22:09:08.629  INFO 10128 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 10128 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 22:09:08.632  INFO 10128 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 22:09:09.298  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:09:09.298  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:09:09.327  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
-2019-11-08 22:09:09.340  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:09:09.342  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:09:09.356  INFO 10128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
-2019-11-08 22:09:09.663  INFO 10128 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$9a5e8ecb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:09:09.690  INFO 10128 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 22:09:09.716  INFO 10128 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f5c6c9cc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:09:09.954  INFO 10128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 22:09:09.975  INFO 10128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 22:09:09.975  INFO 10128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 22:09:10.075  INFO 10128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 22:09:10.075  INFO 10128 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1406 ms
-2019-11-08 22:09:10.233  INFO 10128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 22:09:10.236  INFO 10128 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 22:09:10.237  INFO 10128 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 22:09:10.282  INFO 10128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 22:09:10.946  INFO 10128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 22:09:12.022  INFO 10128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 22:09:12.539  INFO 10128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 22:09:12.542  INFO 10128 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.397 seconds (JVM running for 5.239)
-2019-11-08 22:09:17.674  INFO 10128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 22:09:17.675  INFO 10128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 22:09:17.683  INFO 10128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-11-08 22:09:19.786  INFO 10128 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 22:09:23.131  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:09:23.157  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:09:45.691  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:09:45.706  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:09:51.832  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:09:51.853  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:18:56.098  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:18:59.482  WARN 10128 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:18:59.494  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:19:12.481  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:19:12.620  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:19:12.662  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:20:18.104  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:20:39.819  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:20:39.824  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:20:42.428  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:20:42.447  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:20:42.461  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:20:51.831  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:20:51.938  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:21:04.205  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:23:08.113  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:23:10.444  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:23:10.448  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:23:11.891  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:23:11.906  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:23:14.500  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:24:08.030  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:24:11.398  WARN 10128 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:24:11.401  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:24:13.005  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:24:13.022  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:24:15.445  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:26:00.702  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:26:00.717  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:26:00.728  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:27:04.732  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:27:08.608  WARN 10128 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:27:08.612  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:27:11.733  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:27:11.750  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:27:11.763  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:27:16.983  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:27:16.997  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:27:17.013  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:27:40.463  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:27:40.477  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:27:40.491  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:27:53.204  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:27:56.691  WARN 10128 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:27:56.696  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:27:58.775  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:27:58.792  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:27:58.806  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:29:44.373  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:29:47.261  WARN 10128 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:29:47.265  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:29:49.544  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:29:49.563  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:29:49.575  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:31:24.643  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:31:27.783  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:31:27.786  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:31:31.338  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:31:31.357  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:31:31.369  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:31:50.435  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User3
-2019-11-08 22:31:50.448  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:31:50.466  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:31:55.323  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:31:55.336  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:31:55.369  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:32:31.511  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:32:31.531  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:32:31.545  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:33:03.635  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:33:06.738  WARN 10128 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:33:06.742  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:33:09.674  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:33:09.698  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:33:09.710  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:33:18.899  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User66
-2019-11-08 22:33:18.911  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:33:18.925  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:34:07.065  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:34:07.078  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:34:07.091  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:34:13.953  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:34:19.724  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:34:21.194  WARN 10128 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:34:21.199  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:34:25.714  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:34:25.728  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:34:25.744  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:35:41.213  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:35:41.224  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:35:41.236  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:36:08.755  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:36:08.768  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:36:08.779  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:36:30.977  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:36:30.989  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:36:31.002  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:37:40.278  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:37:42.064  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:37:42.158  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:37:46.425  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:37:46.439  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:37:46.451  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:37:49.303  WARN 10128 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:37:49.306  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:37:51.488  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 22:37:51.502  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:37:51.515  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:37:53.158  WARN 10128 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:37:53.162  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:37:55.260  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:37:55.271  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:37:55.283  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:38:01.032  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User51
-2019-11-08 22:38:01.045  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:38:01.057  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:38:04.444  WARN 10128 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:38:04.448  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:38:05.922  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 22:38:05.942  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:38:05.960  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:38:07.241  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:38:07.246  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:38:08.330  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User4
-2019-11-08 22:38:08.346  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:38:08.358  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:38:09.810  WARN 10128 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:38:09.813  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:38:11.406  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User3
-2019-11-08 22:38:11.420  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 22:38:11.432  INFO 10128 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 22:38:13.110  WARN 10128 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:38:13.114  INFO 10128 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:40:51.341  WARN 10128 --- [http-nio-8080-exec-6] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:40:51.346  INFO 10128 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:41:57.163  WARN 10128 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:41:57.167  INFO 10128 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:42:06.764  WARN 10128 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:42:06.768  INFO 10128 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 22:45:32.427  INFO 10128 --- [RMI TCP Connection(39)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-11-08 22:45:32.558  INFO 10128 --- [RMI TCP Connection(39)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-11-08 22:55:34.475  INFO 17000 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 17000 (C:\Users\vuman\eclipse-workspace\WebAPI\target\classes started by vuman in C:\Users\vuman\eclipse-workspace\WebAPI)
-2019-11-08 22:55:34.478  INFO 17000 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
-2019-11-08 22:55:35.497  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:55:35.498  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:55:35.526  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
-2019-11-08 22:55:35.546  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-11-08 22:55:35.549  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-11-08 22:55:35.568  INFO 17000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
-2019-11-08 22:55:35.989  INFO 17000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$331d089b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:55:36.058  INFO 17000 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2019-11-08 22:55:36.086  INFO 17000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e85439c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-11-08 22:55:36.449  INFO 17000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-11-08 22:55:36.475  INFO 17000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-11-08 22:55:36.476  INFO 17000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
-2019-11-08 22:55:36.629  INFO 17000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-11-08 22:55:36.629  INFO 17000 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2097 ms
-2019-11-08 22:55:36.902  INFO 17000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
-2019-11-08 22:55:36.905  INFO 17000 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2019-11-08 22:55:36.906  INFO 17000 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2019-11-08 22:55:36.968  INFO 17000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2019-11-08 22:55:38.185  INFO 17000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2019-11-08 22:55:40.182  INFO 17000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-11-08 22:55:40.630  INFO 17000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-11-08 22:55:40.633  INFO 17000 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 6.581 seconds (JVM running for 7.593)
-2019-11-08 22:56:11.720  INFO 17000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-11-08 22:56:11.721  INFO 17000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-11-08 22:56:11.729  INFO 17000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-11-08 22:56:11.917  INFO 17000 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2019-11-08 22:56:12.090  INFO 17000 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 22:56:16.058  WARN 17000 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 22:56:16.072  INFO 17000 --- [http-nio-8080-exec-7] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 23:00:11.389  INFO 17000 --- [http-nio-8080-exec-9] com.api.controller.AccountController     : Đăng nhập
-2019-11-08 23:00:14.337  WARN 17000 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 23:00:16.848  WARN 17000 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 23:00:16.854  INFO 17000 --- [http-nio-8080-exec-7] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 23:00:18.902  INFO 17000 --- [http-nio-8080-exec-9] com.api.controller.RoleController        : Lấy danh sách Role của User1
-2019-11-08 23:00:18.922  INFO 17000 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 23:00:18.937  INFO 17000 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 23:00:20.635  WARN 17000 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 23:00:20.642  INFO 17000 --- [http-nio-8080-exec-5] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 23:00:21.789  INFO 17000 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User3
-2019-11-08 23:00:21.807  INFO 17000 --- [http-nio-8080-exec-9] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 23:00:21.821  INFO 17000 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 23:00:23.520  WARN 17000 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-2019-11-08 23:00:23.527  INFO 17000 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy danh sách User
-2019-11-08 23:00:24.727  INFO 17000 --- [http-nio-8080-exec-5] com.api.controller.RoleController        : Lấy danh sách Role của User52
-2019-11-08 23:00:24.740  INFO 17000 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role
-2019-11-08 23:00:24.752  INFO 17000 --- [http-nio-8080-exec-9] com.api.controller.AccountController     : Lấy User từ Id
-2019-11-08 23:08:18.409  INFO 17000 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2019-11-08 23:08:18.420  INFO 17000 --- [RMI TCP Connection(15)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 08:15:05.254  INFO 12736 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 12736 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 08:15:05.282  INFO 12736 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 08:15:08.034  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 08:15:08.042  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 08:15:08.138  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 0 repository interfaces.
+2019-11-09 08:15:08.186  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 08:15:08.190  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 08:15:08.246  INFO 12736 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-11-09 08:15:09.310  INFO 12736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$67119fbb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 08:15:09.467  INFO 12736 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 08:15:09.611  INFO 12736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c279dabc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 08:15:10.424  INFO 12736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 08:15:10.509  INFO 12736 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 08:15:10.509  INFO 12736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 08:15:10.913  INFO 12736 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 08:15:10.913  INFO 12736 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5400 ms
+2019-11-09 08:15:11.675  INFO 12736 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 08:15:11.690  INFO 12736 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 08:15:11.690  INFO 12736 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 08:15:11.878  INFO 12736 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 08:15:14.683  INFO 12736 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 08:15:18.024  INFO 12736 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 08:15:19.819  INFO 12736 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 08:15:19.833  INFO 12736 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 15.933 seconds (JVM running for 19.016)
+2019-11-09 08:16:36.226  INFO 12736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 08:16:36.229  INFO 12736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 08:16:36.259  INFO 12736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2019-11-09 08:16:36.459 ERROR 12736 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.api.controller.PermissionController.GetAllPermission(PermissionController.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_221]
+
+2019-11-09 08:17:29.986 ERROR 12736 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.api.controller.PermissionController.GetAllPermission(PermissionController.java:27) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_221]
+
+2019-11-09 08:18:33.774  INFO 19360 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 19360 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 08:18:33.774  INFO 19360 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 08:18:36.303  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 08:18:36.313  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 08:18:36.396  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 0 repository interfaces.
+2019-11-09 08:18:36.436  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 08:18:36.440  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 08:18:36.488  INFO 19360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-09 08:18:37.590  INFO 19360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$3d1ddb2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 08:18:37.699  INFO 19360 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 08:18:37.800  INFO 19360 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$98861630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 08:18:38.636  INFO 19360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 08:18:38.706  INFO 19360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 08:18:38.706  INFO 19360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 08:18:39.081  INFO 19360 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 08:18:39.081  INFO 19360 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5131 ms
+2019-11-09 08:18:39.820  INFO 19360 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 08:18:39.832  INFO 19360 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 08:18:39.836  INFO 19360 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 08:18:40.011  INFO 19360 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 08:18:42.303  INFO 19360 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 08:18:45.814  INFO 19360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 08:18:47.680  INFO 19360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 08:18:47.696  INFO 19360 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 15.26 seconds (JVM running for 18.146)
+2019-11-09 08:18:52.118  INFO 19360 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 08:18:52.125  INFO 19360 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 08:18:52.173  INFO 19360 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 48 ms
+2019-11-09 08:19:12.478  INFO 19360 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 09:14:45.444  INFO 2664 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 2664 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 09:14:45.447  INFO 2664 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 09:14:46.086  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:14:46.086  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:14:46.110  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-09 09:14:46.123  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:14:46.124  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:14:46.134  INFO 2664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+2019-11-09 09:14:46.458  INFO 2664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$f3fc606c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:14:46.487  INFO 2664 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 09:14:46.513  INFO 2664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4f649b6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:14:46.734  INFO 2664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 09:14:46.750  INFO 2664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 09:14:46.750  INFO 2664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 09:14:46.937  INFO 2664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 09:14:46.938  INFO 2664 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1456 ms
+2019-11-09 09:14:47.101  INFO 2664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 09:14:47.104  INFO 2664 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 09:14:47.105  INFO 2664 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 09:14:47.150  INFO 2664 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 09:14:47.809  INFO 2664 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 09:14:48.751  INFO 2664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 09:14:49.275  INFO 2664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 09:14:49.284  INFO 2664 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.171 seconds (JVM running for 5.192)
+2019-11-09 09:15:09.759  INFO 2664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 09:15:09.760  INFO 2664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 09:15:09.769  INFO 2664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-11-09 09:15:09.974  INFO 2664 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 09:15:10.121  INFO 2664 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:15:10.424 ERROR 2664 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : 2
+2019-11-09 09:18:24.510  INFO 15756 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 15756 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 09:18:24.513  INFO 15756 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 09:18:25.164  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:18:25.164  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:18:25.190  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-11-09 09:18:25.198  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:18:25.198  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:18:25.212  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-09 09:18:25.516  INFO 15756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$25999d9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:18:25.537  INFO 15756 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 09:18:25.568  INFO 15756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8101d8a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:18:25.814  INFO 15756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 09:18:25.848  INFO 15756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 09:18:25.848  INFO 15756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 09:18:25.970  INFO 15756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 09:18:25.970  INFO 15756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1432 ms
+2019-11-09 09:18:26.130  INFO 15756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 09:18:26.134  INFO 15756 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 09:18:26.134  INFO 15756 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 09:18:26.165  INFO 15756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 09:18:26.821  INFO 15756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 09:18:27.818  INFO 15756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 09:18:28.386  INFO 15756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 09:18:28.393  INFO 15756 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.229 seconds (JVM running for 5.062)
+2019-11-09 09:18:31.680  INFO 15756 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 09:18:31.682  INFO 15756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 09:18:31.694  INFO 15756 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-09 09:18:31.851  WARN 15756 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:19:31.671  INFO 22256 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 22256 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 09:19:31.674  INFO 22256 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 09:19:32.390  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:19:32.391  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:19:32.415  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-09 09:19:32.428  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 09:19:32.429  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 09:19:32.443  INFO 22256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-11-09 09:19:32.774  INFO 22256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2b38b73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:19:32.803  INFO 22256 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 09:19:32.828  INFO 22256 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e1bc674] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 09:19:33.078  INFO 22256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 09:19:33.099  INFO 22256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 09:19:33.099  INFO 22256 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 09:19:33.195  INFO 22256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 09:19:33.195  INFO 22256 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1486 ms
+2019-11-09 09:19:33.372  INFO 22256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 09:19:33.375  INFO 22256 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 09:19:33.377  INFO 22256 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 09:19:33.432  INFO 22256 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 09:19:34.083  INFO 22256 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 09:19:35.096  INFO 22256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 09:19:35.696  INFO 22256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 09:19:35.703  INFO 22256 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.378 seconds (JVM running for 5.196)
+2019-11-09 09:19:36.661  INFO 22256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 09:19:36.662  INFO 22256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 09:19:36.670  INFO 22256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-11-09 09:19:36.908  INFO 22256 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 09:19:37.053  INFO 22256 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:19:44.045  WARN 22256 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:19:46.300  WARN 22256 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:19:46.305  INFO 22256 --- [http-nio-8080-exec-9] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:19:52.282  INFO 22256 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role của User3
+2019-11-09 09:19:52.397  INFO 22256 --- [http-nio-8080-exec-5] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:19:52.424  INFO 22256 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:20:21.667  INFO 22256 --- [http-nio-8080-exec-7] com.api.controller.RoleController        : Lấy danh sách Role của User3
+2019-11-09 09:20:21.696  INFO 22256 --- [http-nio-8080-exec-9] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:20:21.708  INFO 22256 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:20:25.435  INFO 22256 --- [http-nio-8080-exec-5] com.api.controller.RoleController        : Lấy danh sách Role của User3
+2019-11-09 09:20:25.448  INFO 22256 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:20:25.551  INFO 22256 --- [http-nio-8080-exec-7] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:20:26.409  INFO 22256 --- [http-nio-8080-exec-9] com.api.controller.RoleController        : Lấy danh sách Role của User3
+2019-11-09 09:20:26.422  INFO 22256 --- [http-nio-8080-exec-1] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:20:26.434  INFO 22256 --- [http-nio-8080-exec-5] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:21:43.569  INFO 22256 --- [http-nio-8080-exec-6] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:21:57.957  WARN 22256 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:21:57.964  INFO 22256 --- [http-nio-8080-exec-1] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:22:02.442  INFO 22256 --- [http-nio-8080-exec-5] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:22:02.554  INFO 22256 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:22:02.570  INFO 22256 --- [http-nio-8080-exec-7] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:23:27.303  INFO 22256 --- [http-nio-8080-exec-9] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:23:37.125  WARN 22256 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:23:37.129  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:23:39.594  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:23:39.639  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:23:39.650  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:23:44.970  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:23:44.983  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:23:45.019  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:23:50.387  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:23:50.402  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:23:50.415  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:24:08.382  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:24:12.504  WARN 22256 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:24:12.509  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:24:15.201  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User51
+2019-11-09 09:24:15.215  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:24:15.226  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:24:18.336  WARN 22256 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:24:18.366  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:26:54.734  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:27:01.628  WARN 22256 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:27:01.632  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:27:04.679  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:27:04.696  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:27:04.775  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:27:34.272  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:27:34.292  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:27:34.304  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:27:48.614  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role của User1
+2019-11-09 09:27:48.630  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:27:48.642  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:27:52.070  WARN 22256 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:27:52.078  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:27:56.737  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role của User66
+2019-11-09 09:27:56.748  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:27:56.760  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:28:01.927  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role của User66
+2019-11-09 09:28:02.044  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:28:02.056  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:28:05.342  WARN 22256 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:28:05.347  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:28:06.909  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role của User66
+2019-11-09 09:28:06.921  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:28:06.934  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.AccountController     : Lấy User từ Id
+2019-11-09 09:28:09.212  WARN 22256 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 09:28:09.216  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 09:46:58.258  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 09:47:13.397  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:49:11.426  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:49:59.841  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:50:03.358  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:50:55.020  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 09:51:19.999  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:16:40.400  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 10:16:55.777  WARN 22256 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2019-11-09 10:16:55.872  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.AccountController     : Lấy danh sách User
+2019-11-09 10:17:12.774  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:19:25.138  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:24:13.174  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:25:17.738  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:26:16.823  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:32:44.999  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:34:09.154  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:34:56.860  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:35:14.953  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:35:30.931  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:35:54.242  INFO 22256 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:36:27.723  INFO 22256 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:48:17.950  INFO 22256 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:48:20.618  INFO 22256 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:48:21.199  INFO 22256 --- [http-nio-8080-exec-3] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 10:57:57.997  INFO 4824 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 4824 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 10:57:58.002  INFO 4824 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 10:57:58.736  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 10:57:58.737  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:57:58.762  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2019-11-09 10:57:58.774  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 10:57:58.775  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:57:58.790  INFO 4824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-11-09 10:57:59.090  INFO 4824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$1ea15428] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:57:59.141  INFO 4824 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 10:57:59.173  INFO 4824 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a098f29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:57:59.449  INFO 4824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 10:57:59.473  INFO 4824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 10:57:59.474  INFO 4824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 10:57:59.582  INFO 4824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 10:57:59.582  INFO 4824 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1520 ms
+2019-11-09 10:57:59.778  INFO 4824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 10:57:59.781  INFO 4824 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 10:57:59.783  INFO 4824 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 10:57:59.843  INFO 4824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 10:58:00.563  INFO 4824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 10:58:01.647  INFO 4824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:58:01.707  WARN 4824 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+2019-11-09 10:58:01.708  INFO 4824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:58:01.713  INFO 4824 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-09 10:58:01.725  INFO 4824 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-09 10:58:01.736 ERROR 4824 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:847) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.api.WebApiApplication.main(WebApiApplication.java:18) [classes/:na]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:619) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:587) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:313) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:283) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at java.util.LinkedHashMap.forEach(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:281) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:253) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:200) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:165) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 16 common frames omitted
+
+2019-11-09 10:59:14.220  INFO 22600 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 22600 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 10:59:14.222  INFO 22600 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 10:59:14.768  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 10:59:14.768  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:59:14.788  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-09 10:59:14.798  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 10:59:14.799  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 10:59:14.812  INFO 22600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-11-09 10:59:15.060  INFO 22600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$6ea67ef5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:59:15.088  INFO 22600 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 10:59:15.108  INFO 22600 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca0eb9f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 10:59:15.305  INFO 22600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 10:59:15.324  INFO 22600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 10:59:15.325  INFO 22600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 10:59:15.416  INFO 22600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 10:59:15.417  INFO 22600 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1163 ms
+2019-11-09 10:59:15.544  INFO 22600 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 10:59:15.545  INFO 22600 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 10:59:15.546  INFO 22600 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 10:59:15.584  INFO 22600 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 10:59:16.174  INFO 22600 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 10:59:16.911  INFO 22600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:59:16.966  WARN 22600 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+2019-11-09 10:59:16.968  INFO 22600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 10:59:16.972  INFO 22600 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-11-09 10:59:16.981  INFO 22600 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-09 10:59:16.989 ERROR 22600 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:847) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.9.RELEASE.jar:2.1.9.RELEASE]
+	at com.api.WebApiApplication.main(WebApiApplication.java:18) [classes/:na]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'permissionController' method 
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetAllPermission()
+to {GET /api/permission/getallper}: There is already 'permissionController' bean method
+public java.util.List<com.api.model.PermissionModel> com.api.controller.PermissionController.GetPermissionRole(int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:619) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:587) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:313) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:283) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at java.util.LinkedHashMap.forEach(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:281) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:253) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:200) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:165) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	... 16 common frames omitted
+
+2019-11-09 11:00:44.329  INFO 17988 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 17988 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 11:00:44.332  INFO 17988 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 11:00:45.005  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 11:00:45.006  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 11:00:45.032  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-09 11:00:45.045  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 11:00:45.047  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 11:00:45.062  INFO 17988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2019-11-09 11:00:45.396  INFO 17988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2784c113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 11:00:45.425  INFO 17988 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 11:00:45.451  INFO 17988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$82ecfc14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 11:00:45.684  INFO 17988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 11:00:45.706  INFO 17988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 11:00:45.707  INFO 17988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 11:00:45.822  INFO 17988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 11:00:45.822  INFO 17988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1454 ms
+2019-11-09 11:00:46.046  INFO 17988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 11:00:46.048  INFO 17988 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 11:00:46.049  INFO 17988 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 11:00:46.099  INFO 17988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 11:00:46.741  INFO 17988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 11:00:47.682  INFO 17988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 11:00:48.201  INFO 17988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 11:00:48.204  INFO 17988 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.207 seconds (JVM running for 5.073)
+2019-11-09 11:01:08.225  INFO 17988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 11:01:08.228  INFO 17988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 11:01:08.238  INFO 17988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-11-09 11:01:17.668  INFO 17988 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 11:01:23.918 ERROR 17988 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: org.hibernate.QueryException: could not resolve property: roleId of: com.api.entity.Role [select r.permissions FROM com.api.entity.Role r where r.roleId = :roleId]] with root cause
+
+org.hibernate.QueryException: could not resolve property: roleId of: com.api.entity.Role
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:62) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:56) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.toType(AbstractEntityPersister.java:1801) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.FromElementType.getPropertyType(FromElementType.java:393) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.FromElement.getPropertyType(FromElement.java:507) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.DotNode.getDataType(DotNode.java:660) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.DotNode.prepareLhs(DotNode.java:264) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.DotNode.resolve(DotNode.java:204) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:109) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.tree.FromReferenceNode.resolve(FromReferenceNode.java:104) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.resolve(HqlSqlWalker.java:1013) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.expr(HqlSqlBaseWalker.java:1286) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.exprOrSubquery(HqlSqlBaseWalker.java:4699) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.comparisonExpr(HqlSqlBaseWalker.java:4169) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.logicalExpr(HqlSqlBaseWalker.java:2134) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.whereClause(HqlSqlBaseWalker.java:813) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:607) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:311) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:259) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:262) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:190) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:142) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:152) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:526) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:628) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:101) ~[hibernate-core-5.2.2.Final.jar:5.2.2.Final]
+	at com.api.DAO.PermissionDAO.GetPermissionRole(PermissionDAO.java:49) ~[classes/:na]
+	at com.api.DAO.PermissionDAO$$FastClassBySpringCGLIB$$ce5aca26.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:750) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295) ~[spring-tx-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at com.api.DAO.PermissionDAO$$EnhancerBySpringCGLIB$$672f9f5f.GetPermissionRole(<generated>) ~[classes/:na]
+	at com.api.controller.PermissionController.GetPermissionRole(PermissionController.java:34) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.1.10.RELEASE.jar:5.1.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.26.jar:9.0.26]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_221]
+
+2019-11-09 11:02:10.172  INFO 17988 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-11-09 11:02:10.190  INFO 17988 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-09 11:02:42.974  INFO 21764 --- [main] com.api.WebApiApplication                : Starting WebApiApplication on Tuan-PC with PID 21764 (C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI\target\classes started by vuman in C:\Users\vuman\Desktop\Github1119\QLCuaHangThuocWebAPI\WebAPI)
+2019-11-09 11:02:42.977  INFO 21764 --- [main] com.api.WebApiApplication                : No active profile set, falling back to default profiles: default
+2019-11-09 11:02:43.609  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 11:02:43.609  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 11:02:43.632  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+2019-11-09 11:02:43.643  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-09 11:02:43.644  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-09 11:02:43.658  INFO 21764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-11-09 11:02:43.959  INFO 21764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$ccb08ce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 11:02:43.988  INFO 21764 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2019-11-09 11:02:44.012  INFO 21764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2818c7e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-09 11:02:44.243  INFO 21764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-09 11:02:44.265  INFO 21764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-09 11:02:44.265  INFO 21764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-11-09 11:02:44.370  INFO 21764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-09 11:02:44.370  INFO 21764 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1357 ms
+2019-11-09 11:02:44.534  INFO 21764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.2.Final}
+2019-11-09 11:02:44.537  INFO 21764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-09 11:02:44.538  INFO 21764 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-09 11:02:44.588  INFO 21764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-09 11:02:45.212  INFO 21764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-11-09 11:02:46.141  INFO 21764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-09 11:02:46.638  INFO 21764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-09 11:02:46.641  INFO 21764 --- [main] com.api.WebApiApplication                : Started WebApiApplication in 4.003 seconds (JVM running for 4.804)
+2019-11-09 11:02:54.161  INFO 21764 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-09 11:02:54.162  INFO 21764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-09 11:02:54.174  INFO 21764 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-11-09 11:03:03.170  INFO 21764 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-09 11:22:34.111  INFO 21764 --- [http-nio-8080-exec-4] com.api.controller.AccountController     : Đăng nhập
+2019-11-09 11:24:14.528  INFO 21764 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:25:16.931  INFO 21764 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:26:31.794  INFO 21764 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:26:53.601  INFO 21764 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:27:02.219  INFO 21764 --- [http-nio-8080-exec-2] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:27:06.784  INFO 21764 --- [http-nio-8080-exec-10] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:27:10.374  INFO 21764 --- [http-nio-8080-exec-8] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:27:19.166  INFO 21764 --- [http-nio-8080-exec-6] com.api.controller.RoleController        : Lấy danh sách Role
+2019-11-09 11:27:53.054  INFO 21764 --- [http-nio-8080-exec-4] com.api.controller.RoleController        : Lấy danh sách Role

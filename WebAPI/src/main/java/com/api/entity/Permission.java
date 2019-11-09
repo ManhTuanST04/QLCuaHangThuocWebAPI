@@ -17,6 +17,9 @@ public class Permission {
 	@Column(name = "name")
 	private String name;
 	
+	@Column(name = "code")
+	private String code;
+	
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name = "role_permission", 
     joinColumns = { @JoinColumn(name = "permissionid") }, 
@@ -42,6 +45,14 @@ public class Permission {
 		this.name = name;
 	}
 
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+	
 	public Collection<Role> getRoles() {
 		return roles;
 	}

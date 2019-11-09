@@ -33,9 +33,44 @@ public class Control {
 	@Column(name = "name")
 	private String name;
 	
+	@Column(name = "code")
+	private String code;
+	
 	@ManyToOne
 	@JoinColumn(name = "permissionid", nullable = false)
 	private Permission permission;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public Permission getPermission() {
+		return permission;
+	}
+
+	public void setPermission(Permission permission) {
+		this.permission = permission;
+	}
 
 	
 

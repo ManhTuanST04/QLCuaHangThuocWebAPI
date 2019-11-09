@@ -4,15 +4,17 @@ public class ControlModel {
 	public ControlModel() {
 	}
 
-	public ControlModel(Integer id, String name) {
+	public ControlModel(Integer id, String name, String code) {
 		this.id = id;
 		this.name = name;
+		this.code = code;
 	}
 	
-	public ControlModel(Integer id, String name, int permissionId) {
+	public ControlModel(Integer id, String name, int permissionId, String code) {
 		this.id = id;
 		this.name = name;
 		this.permissionId = permissionId;
+		this.code = code;
 	}
 	
 	private Integer id;
@@ -21,6 +23,8 @@ public class ControlModel {
 	
 	private Integer permissionId;
 
+	private String code;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -45,5 +49,11 @@ public class ControlModel {
 		this.permissionId = permissionId;
 	}
 	
-	
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
 }

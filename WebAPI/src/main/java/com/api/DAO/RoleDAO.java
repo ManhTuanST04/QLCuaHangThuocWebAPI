@@ -33,7 +33,7 @@ public class RoleDAO {
 		if(lstRole.size() > 0) {
 			RoleModel roleModel;
 			for (Role role : lstRole) {
-				roleModel = new RoleModel(role.getId(), role.getName());
+				roleModel = new RoleModel(role.getId(), role.getName(), role.getCode());
 				lstRoleModel.add(roleModel);
 			}
 		}
@@ -50,7 +50,7 @@ public class RoleDAO {
 		if(lstRole.size() > 0) {
 			RoleModel roleModel;
 			for (Role role : lstRole) {
-				roleModel = new RoleModel(role.getId(), role.getName());
+				roleModel = new RoleModel(role.getId(), role.getName(), role.getCode());
 				lstRoleModel.add(roleModel);
 			}
 		}

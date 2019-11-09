@@ -16,7 +16,7 @@ public class HibernateUtils {
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()//
 					.configure("hibernate.cfg.xml").build();
 
-			// Tạo nguồn siêu dữ liệu (metadata) từ ServiceRegistry
+			// Tạo nguồn siêu dữ liệu (metadata) từ ServiceRegistry ?
 			Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
 
 			return metadata.getSessionFactoryBuilder().build();

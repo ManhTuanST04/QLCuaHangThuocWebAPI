@@ -27,6 +27,9 @@ public class Role {
 	@Column(name = "name")
 	private String name;
 	
+	@Column(name = "code")
+	private String code;
+	
 	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinTable(name = "role_permission", 
 	    joinColumns = { @JoinColumn(name = "roleid") }, 
@@ -80,24 +83,32 @@ public class Role {
 		this.users = users;
 	}
 
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
 
 	public Role() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-
-	public Role(Integer id, String name, Collection<Permission> permissions, Collection<User> users) {
+	public Role(Integer id, String name, String code , Collection<Permission> permissions, Collection<User> users) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.permissions = permissions;
 		this.users = users;
+		this.code = code;
 	}
 	
-	public Role(Integer id, String name) {
+	public Role(Integer id, String name, String code) {
 		this.id = id;
 		this.name = name;
+		this.code = code;
 	}
 	
 }
