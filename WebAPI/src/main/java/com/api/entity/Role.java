@@ -43,7 +43,14 @@ public class Role {
 	    inverseJoinColumns = {@JoinColumn(name = "userid") })
 	private Collection<User> users;
 
-
+	public void RemoveAllUser() {
+		users.clear();
+	}
+	
+	public void RemoveAllPermission() {
+		permissions.clear();
+	}
+	
 	public Integer getId() {
 		return id;
 	}

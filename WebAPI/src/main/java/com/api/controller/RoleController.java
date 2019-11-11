@@ -63,13 +63,57 @@ public class RoleController {
 		
 	} 
 	
+	@PostMapping(path = "/api/role/addrole")
+	public int AddRole(@RequestBody RoleModel roleModel) {
+		try {
+			roleDAO.AddRole(roleModel);
+			return 1;
+		}
+		catch (Exception ex)
+		{
+			logger.error(ex.getMessage());
+			return 0;
+		}
+	}
 	
+	@GetMapping(path = "/api/role/getrolebyid")
+	public RoleModel GetRoleById(int idRole) {
+		try {
+			RoleModel roleModel = roleDAO.GetRoleById(idRole);
+			return roleModel;
+		}
+		catch (Exception ex)
+		{
+			logger.error(ex.getMessage());
+			return null;
+		}
+	}
 	
+	@PostMapping(path = "/api/role/updaterole")
+	public int UpdateRole(@RequestBody RoleModel roleModel) {
+		try {
+			roleDAO.UpdateRole(roleModel);
+			return 1;
+		}
+		catch (Exception ex)
+		{
+			logger.error(ex.getMessage());
+			return 0;
+		}
+	}
 	
-	
-	
-	
-	
+	@GetMapping(path = "/api/role/deleterole")
+	public int DeleteRole(int roleId) {
+		try {
+			roleDAO.DeleteRole(roleId);
+			return 1;
+		}
+		catch (Exception ex)
+		{
+			logger.error(ex.getMessage());
+			return 0;
+		}
+	}
 	
 	
 	

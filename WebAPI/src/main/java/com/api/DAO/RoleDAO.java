@@ -86,4 +86,52 @@ public class RoleDAO {
 		return 1;
 	}
 	
+	public int AddRole(RoleModel roleModel) {
+		Role role = new Role(roleModel.getId(), roleModel.getName(), roleModel.getCode());
+		Session session = this.sessionFactory.getCurrentSession();
+		session.save(role);
+		return 1;
+	}
+	
+	public RoleModel GetRoleById(int idRole) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Role role = session.get(Role.class, idRole);
+		RoleModel roleModel = new RoleModel(role.getId(), role.getName(), role.getCode());
+		return roleModel;
+	}
+	
+	public int UpdateRole(RoleModel roleModel) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Role role = session.get(Role.class, roleModel.getId());
+		role.setId(roleModel.getId());
+		role.setName(roleModel.getName());
+		role.setCode(roleModel.getCode());
+		session.update(role);
+		return 1;
+	}
+	
+	public int DeleteRole(int idRole) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Role role = session.get(Role.class, idRole);
+		role.RemoveAllUser();
+		role.RemoveAllPermission();
+		return 1;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
