@@ -29,6 +29,15 @@ public class Permission {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "permission")
 	private Collection<Control> lstControl;
 	
+	public void DeleteControlForPer(Control control) {
+		lstControl.remove(control);
+		
+	}
+	
+//	public void AssignControlForPer(Control control) {
+//		lstControl.add(control);
+//	}
+	
 	public Integer getId() {
 		return id;
 	}

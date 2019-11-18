@@ -51,6 +51,16 @@ public class Role {
 		permissions.clear();
 	}
 	
+	public void RemovePerForRole(Permission per) {
+		permissions.remove(per);
+		per.getRoles().remove(this);
+	}
+	
+	public void AddPerForRole(Permission per) {
+		permissions.add(per);
+		//per.getRoles().add(this);
+	}
+	
 	public Integer getId() {
 		return id;
 	}

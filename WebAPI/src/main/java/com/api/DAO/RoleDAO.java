@@ -113,8 +113,13 @@ public class RoleDAO {
 	public int DeleteRole(int idRole) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Role role = session.get(Role.class, idRole);
+		//Xóa vài trò này khỏi các user liên kết 
 		role.RemoveAllUser();
+		//xóa vai trò này khỏi các quyền liên kết
 		role.RemoveAllPermission();
+		//xóa vai trò này khỏi bảng vai trò
+		session.delete(role);
+		
 		return 1;
 	}
 	

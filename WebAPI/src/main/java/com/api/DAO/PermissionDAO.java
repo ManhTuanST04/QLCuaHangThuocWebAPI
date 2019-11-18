@@ -42,7 +42,7 @@ public class PermissionDAO {
 		return lstPer;
 	}
 	
-	//Lấy danh sách các quyền của Vai trò
+	//Lấy danh sách các quyền của Nhóm quyền
 	public List<PermissionModel> GetPermissionRole(int roleId){
 		Session session = this.sessionFactory.getCurrentSession();
 		String hql = "select r.permissions FROM Role r where r.id = :roleId";
@@ -61,6 +61,28 @@ public class PermissionDAO {
 		
 		return lstPer;
 	}
+	
+	//Gán quyền cho Nhóm quyền
+	public int AssignPermissionForRole(int roleId, int perId) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Role role = session.get(Role.class, roleId);
+		Permission per = session.get(Permission.class, perId);
+		role.AddPerForRole(per);
+		return 1;
+	}
+	
+	public int RemovePerForRole(int roleId, int perId) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Role role = session.get(Role.class, roleId);
+		Permission per = session.get(Permission.class, perId);
+		role.RemovePerForRole(per);
+		return 1;
+	}
+	
+	
+	
+	
+	
 	
 	
 }

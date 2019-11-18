@@ -35,4 +35,34 @@ public class PermissionController {
 		return lst;
 	}
 	
+//	@GetMapping(path = "/api/permission/getpernotinrole")
+//	public List<PermissionModel> GetListPermissionNotInRole(int roleId){
+//		List<PermissionModel> lst = perDAO.GetListPermissionNotInRole(roleId);
+//		return lst;
+//	}
+	@GetMapping(path = "/api/permission/assignperforrole")
+	public int AssignPerForRole(int roleId, int perId) {
+		try {
+			int res = 0;
+			res = perDAO.AssignPermissionForRole(roleId, perId);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	@GetMapping(path = "/api/permission/removeperforrole")
+	public int RemovePerForRole(int roleId, int perId) {
+		try {
+			int res = 0;
+			res = perDAO.RemovePerForRole(roleId, perId);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	
 }

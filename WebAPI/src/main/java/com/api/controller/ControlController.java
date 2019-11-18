@@ -32,4 +32,30 @@ public class ControlController {
 		List<ControlModel> lst = controlDAO.GetControlPer(perId);
 		return lst;
 	}
+	
+	@PostMapping(value = "/api/control/assigncontrolforper")
+	public int AssignControlForPer(@RequestBody ControlModel controlModel){
+		try {
+			int res = 0;
+			res = controlDAO.AssignControlForRole(controlModel);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	
+	@PostMapping(value = "/api/control/deletecontrolforper")
+	public int DeleteControlForPer(@RequestBody ControlModel controlModel){
+		try {
+			int res = 0;
+			res = controlDAO.DeleteControlForRole(controlModel);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
 }

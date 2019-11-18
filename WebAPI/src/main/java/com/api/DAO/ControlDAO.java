@@ -36,7 +36,7 @@ public class ControlDAO {
 		if(lst.size() > 0) {
 			ControlModel controlModel;
 			for (Control control : lst) {
-				controlModel = new ControlModel(control.getId(), control.getName(), control.getCode());
+				controlModel = new ControlModel(control.getId(), control.getName(), control.getCode(), control.getPermission().getId());
 				lstModel.add(controlModel);
 			}
 		}
@@ -55,13 +55,32 @@ public class ControlDAO {
 		if(lst.size() > 0) {
 			ControlModel controlModel;
 			for (Control control : lst) {
-				controlModel = new ControlModel(control.getId(), control.getName(), control.getCode());
+				controlModel = new ControlModel(control.getId(), control.getName(), control.getCode(),control.getPermission().getId());
 				lstModel.add(controlModel);
 			}
 		}
 		
 		return lstModel;
 	}
+	
+	public int AssignControlForRole(ControlModel controlModel) {
+		Session session = sessionFactory.getCurrentSession();
+		Permission per = session.get(Permission.class, controlModel.getPermissionId());
+		Control control = new Control(controlModel.getId(), controlModel.getName(), controlModel.getCode(), per);
+		session.save(control);
+		return 1;
+	}
+	
+	public int DeleteControlForRole(ControlModel controlModel) {
+		Session session = sessionFactory.getCurrentSession();
+		String hql = "delete FROM Control c where c.id = :conId";
+		Query query = session.createQuery(hql);
+		query.setParameter("conId", controlModel.getId());
+		query.executeUpdate();
+		
+		return 1;
+	}
+	
 	
 	
 	

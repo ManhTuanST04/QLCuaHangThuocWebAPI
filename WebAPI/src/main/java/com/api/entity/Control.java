@@ -18,10 +18,11 @@ public class Control {
 		
 	}
 	
-	public Control(Integer id, String name, Permission per) {
+	public Control(Integer id, String name, String code, Permission per) {
 		super();
 		this.id = id;
 		this.name = name;
+		this.code = code;
 		this.permission = per;
 	}
 	

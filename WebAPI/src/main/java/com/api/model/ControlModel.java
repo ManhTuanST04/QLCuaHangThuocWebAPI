@@ -10,7 +10,7 @@ public class ControlModel {
 		this.code = code;
 	}
 	
-	public ControlModel(Integer id, String name, int permissionId, String code) {
+	public ControlModel(Integer id, String name, String code,int permissionId) {
 		this.id = id;
 		this.name = name;
 		this.permissionId = permissionId;

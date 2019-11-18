@@ -153,7 +153,7 @@ public class UserDAO {
 	
 	public List<ControlModel> GetListControlUser(int userId){
 		Session session = this.sessionFactory.getCurrentSession();
-		String hql = "select c.id, c.name, c.code FROM Control c where c.permission.id in (select distinct(per.id) FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId)";
+		String hql = "select c.id, c.name, c.code, c.permission.id FROM Control c where c.permission.id in (select distinct(per.id) FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId)";
 		
 		Query query = session.createQuery(hql);
 		query.setParameter("userId", userId);
@@ -162,7 +162,7 @@ public class UserDAO {
 		if(lstControl.size() > 0) {
 			ControlModel controlModel;
 			for (Object[] obj : lstControl) {
-				controlModel = new ControlModel((int)obj[0], obj[1].toString(), obj[2].toString());
+				controlModel = new ControlModel((int)obj[0], obj[1].toString(), obj[2].toString(), (int)obj[3]);
 				lstControlModel.add(controlModel);
 			}
 		}	
