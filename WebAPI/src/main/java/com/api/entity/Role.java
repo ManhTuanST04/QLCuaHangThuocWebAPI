@@ -42,6 +42,13 @@ public class Role {
 	    joinColumns = { @JoinColumn(name = "roleid") }, 
 	    inverseJoinColumns = {@JoinColumn(name = "userid") })
 	private Collection<User> users;
+	
+	//Bảng role control
+	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JoinTable(name = "role_control", 
+	    joinColumns = { @JoinColumn(name = "roleid") }, 
+	    inverseJoinColumns = {@JoinColumn(name = "controlid") })
+	private Collection<Control> controls;
 
 	public void RemoveAllUser() {
 		users.clear();
@@ -51,6 +58,7 @@ public class Role {
 		permissions.clear();
 	}
 	
+
 	public void RemovePerForRole(Permission per) {
 		permissions.remove(per);
 		per.getRoles().remove(this);
@@ -59,6 +67,16 @@ public class Role {
 	public void AddPerForRole(Permission per) {
 		permissions.add(per);
 		//per.getRoles().add(this);
+	}
+	
+	public void AddControlForRole(Control control) {
+		controls.add(control);
+		//per.getRoles().add(this);
+	}
+	
+	public void RemoveControlForRole(Control con) {
+		controls.remove(con);
+		con.getRoles().remove(this);
 	}
 	
 	public Integer getId() {
@@ -100,6 +118,15 @@ public class Role {
 		this.users = users;
 	}
 
+	//role control
+	public Collection<Control> getControls() {
+		return controls;
+	}
+
+	public void setControls(Collection<Control> controls) {
+		this.controls = controls;
+	}
+	
 	public String getCode() {
 		return code;
 	}
@@ -113,13 +140,14 @@ public class Role {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Role(Integer id, String name, String code , Collection<Permission> permissions, Collection<User> users) {
+	public Role(Integer id, String name, String code , Collection<Permission> permissions, Collection<User> users, Collection<Control> controls) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.permissions = permissions;
 		this.users = users;
 		this.code = code;
+		this.controls = controls;
 	}
 	
 	public Role(Integer id, String name, String code) {

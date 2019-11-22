@@ -145,7 +145,7 @@ public class UserDAO {
 			for (Object[] obj : lstPer) {
 				pm = new PermissionModel((int)obj[0], obj[1].toString(), obj[2].toString());
 				lstPerModel.add(pm);
-			}
+			}  
 		}
 		
 		return lstPerModel;
@@ -154,7 +154,7 @@ public class UserDAO {
 	public List<ControlModel> GetListControlUser(int userId){
 		Session session = this.sessionFactory.getCurrentSession();
 		String hql = "select c.id, c.name, c.code, c.permission.id FROM Control c where c.permission.id in (select distinct(per.id) FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = :userId)";
-		
+
 		Query query = session.createQuery(hql);
 		query.setParameter("userId", userId);
 		List<Object[]> lstControl = query.list();
@@ -165,7 +165,25 @@ public class UserDAO {
 				controlModel = new ControlModel((int)obj[0], obj[1].toString(), obj[2].toString(), (int)obj[3]);
 				lstControlModel.add(controlModel);
 			}
-		}	
+		}
+		
+		String hql2 = "select c.id, c.name, c.code, c.permission.id from Control c INNER JOIN c.roles r INNER JOIN r.users u where u.id = :userId";
+		Query query2 = session.createQuery(hql2);
+		query2.setParameter("userId", userId);
+		List<Object[]> lstControl2 = query2.list();
+		List<ControlModel> lstControlModel2 = new ArrayList<ControlModel>();
+		if(lstControl2.size() > 0) {
+			ControlModel controlModel;
+			for (Object[] obj : lstControl2) {
+				controlModel = new ControlModel((int)obj[0], obj[1].toString(), obj[2].toString(), (int)obj[3]);
+				lstControlModel2.add(controlModel);
+			}
+		}
+		
+		if(lstControlModel2.size() > 0) {
+			lstControlModel.addAll(lstControlModel2);
+		}
+		
 		return lstControlModel;
 	}
 	

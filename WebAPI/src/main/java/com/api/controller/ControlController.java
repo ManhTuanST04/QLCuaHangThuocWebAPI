@@ -37,7 +37,7 @@ public class ControlController {
 	public int AssignControlForPer(@RequestBody ControlModel controlModel){
 		try {
 			int res = 0;
-			res = controlDAO.AssignControlForRole(controlModel);
+			res = controlDAO.AssignControlForPer(controlModel);
 			return res;
 		}
 		catch (Exception e) {
@@ -50,12 +50,55 @@ public class ControlController {
 	public int DeleteControlForPer(@RequestBody ControlModel controlModel){
 		try {
 			int res = 0;
-			res = controlDAO.DeleteControlForRole(controlModel);
+			res = controlDAO.DeleteControlForPer(controlModel);
 			return res;
 		}
 		catch (Exception e) {
 			return 0;
 		}
 	}
+	
+	//Role và control
+	@GetMapping(value = "/api/control/getcontrolforrole")
+	public List<ControlModel> GetControlRole(int roleId, int x){
+		List<ControlModel> lst = controlDAO.GetControlRole(roleId);
+		return lst;
+	}
+	
+	//Gán control cho Role
+	@GetMapping(value = "/api/control/assigncotrolforrole")
+	public int AssignControlForRole(int roleId, int controlId) {
+		try {
+			int res = 0;
+			res = controlDAO.AssignControlForRole(roleId, controlId);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	@GetMapping(value = "/api/control/deletecontrolforrole")
+	public int DeleteControlForRole(int roleId, int controlId){
+		try {
+			int res = 0;
+			res = controlDAO.DeleteControlForRole(roleId, controlId);
+			return res;
+		}
+		catch (Exception e) {
+			return 0;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
