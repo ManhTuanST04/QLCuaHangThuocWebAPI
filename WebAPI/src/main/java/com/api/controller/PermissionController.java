@@ -35,11 +35,6 @@ public class PermissionController {
 		return lst;
 	}
 	
-//	@GetMapping(path = "/api/permission/getpernotinrole")
-//	public List<PermissionModel> GetListPermissionNotInRole(int roleId){
-//		List<PermissionModel> lst = perDAO.GetListPermissionNotInRole(roleId);
-//		return lst;
-//	}
 	@GetMapping(path = "/api/permission/assignperforrole")
 	public int AssignPerForRole(int roleId, int perId) {
 		try {
@@ -64,5 +59,14 @@ public class PermissionController {
 		}
 	}
 	
-	
+	@PostMapping(path = "/api/permission/addnewper")
+	public int ThemMoiQuyen(@RequestBody PermissionModel model) {
+		try {
+			int res = perDAO.AddNewPer(model);
+			return res;
+		}
+		catch(Exception ex) {
+			return 0;
+		}
+	}
 }

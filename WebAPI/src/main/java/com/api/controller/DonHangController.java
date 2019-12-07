@@ -62,4 +62,36 @@ public class DonHangController {
 		}
 	}
 	
+	@GetMapping(path = "/api/donhang/getalldonhang")
+	public List<DonDatHangModel> DanhSachDonHang() {
+		try {
+			List<DonDatHangModel> lst = dao.LayTatCaDonHang();
+			return lst;
+		}
+		catch (Exception ex) {
+			return null;
+		}
+	}
+	
+	@GetMapping(path = "/api/donhang/xacnhandonhang")
+	public int XacNhanDon(int idDH) {
+		try {
+			int res = dao.XacNhanDonHang(idDH);
+			return res;
+		}
+		catch (Exception ex) {
+			return 0;
+		}
+	}
+	
+	@GetMapping(path = "/api/donhang/huydon")
+	public int HuyDon(int idDH) {
+		try {
+			int res = dao.HuyDonHang(idDH);
+			return res;
+		}
+		catch (Exception ex) {
+			return 0;
+		}
+	}
 }

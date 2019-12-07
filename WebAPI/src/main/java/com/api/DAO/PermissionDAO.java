@@ -80,7 +80,17 @@ public class PermissionDAO {
 	}
 	
 	
-	
+	//Thêm quyền
+	public int AddNewPer(PermissionModel perModel) {
+		Session session = this.sessionFactory.getCurrentSession();
+		
+		Permission per = new Permission();
+		per.setCode(perModel.getCode());
+		per.setName(perModel.getName());
+		
+		session.save(per);
+		return 1;
+	}
 	
 	
 	

@@ -1,5 +1,6 @@
 package com.api.DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -36,5 +37,58 @@ public class KhachHangDAO {
 		//session.getTransaction().commit();
 		//session.close();
 		return khModel;
+	}
+	
+	public KhachHangModel GetKhachHangById(int idKH) {
+		Session session = this.sessionFactory.getCurrentSession();
+		KhachHang u = session.get(KhachHang.class, idKH);
+		
+		KhachHangModel khModel = new KhachHangModel(u.getId(), u.getDienThoai() , u.getMatKhau(), u.getTen(), u.getEmail(), u.getDiaChi());
+		return khModel;
+	} 
+	
+	public List<KhachHangModel> DanhSachKhachHang() {
+		Session session = this.sessionFactory.getCurrentSession();
+		
+		List<KhachHang> lst = session.createCriteria(KhachHang.class).list();
+		List<KhachHangModel> lstModel = new ArrayList<KhachHangModel>();
+		KhachHangModel model;
+		for (KhachHang u : lst) {
+			model = new KhachHangModel(u.getId(), u.getDienThoai() , u.getMatKhau(), u.getTen(), u.getEmail(), u.getDiaChi());
+			lstModel.add(model);
+		}
+		return lstModel;
+	} 
+	
+	public int AddKhachHang(KhachHangModel khModel) {
+		Session session = this.sessionFactory.getCurrentSession();
+		KhachHang kh = new KhachHang();
+		kh.setTen(khModel.getTen());
+		kh.setMatKhau(khModel.getMatKhau());
+		kh.setEmail(khModel.getEmail());
+		kh.setDienThoai(khModel.getDienThoai());
+		kh.setDiaChi(khModel.getDiaChi());
+		session.save(kh);
+		return 1;
+	}
+	
+	public int EditKhachHang(KhachHangModel khModel) {
+		Session session = this.sessionFactory.getCurrentSession();
+		KhachHang kh = new KhachHang();
+		kh.setId(khModel.getId());
+		kh.setTen(khModel.getTen());
+		kh.setMatKhau(khModel.getMatKhau());
+		kh.setEmail(khModel.getEmail());
+		kh.setDienThoai(khModel.getDienThoai());
+		kh.setDiaChi(khModel.getDiaChi());
+		session.saveOrUpdate(kh);
+		return 1;
+	}
+	
+	public int DeleteKhachHang(int idKH) {
+		Session session = this.sessionFactory.getCurrentSession();
+		KhachHang kh = session.get(KhachHang.class, idKH);
+		session.delete(kh);
+		return 1;
 	}
 }

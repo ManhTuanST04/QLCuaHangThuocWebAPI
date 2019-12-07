@@ -74,6 +74,16 @@ public class DonDatHangModel {
 		this.tongTien = tongTien;
 	}
 
+	public DonDatHangModel(int id, int idKH, Date ngayDat, Date ngayXuat, int tinhTrangDon, int tongTien) {
+		super();
+		this.id = id;
+		this.idKH = idKH;
+		this.ngayDat = ngayDat;
+		this.ngayXuat = ngayXuat;
+		this.tinhTrangDon = tinhTrangDon;
+		this.tongTien = tongTien;
+	}
+
 	
 	
 	

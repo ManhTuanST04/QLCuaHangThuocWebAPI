@@ -23,9 +23,54 @@ public class KhachHangController {
 	@Autowired
 	private KhachHangDAO khDAO;
 	
-	@GetMapping(path = "/api/account/khachhanglogin")
+	@GetMapping(path = "/api/khachhang/khachhanglogin")
 	public KhachHangModel KhachHangLogin(String dienthoai, String matkhau) {
 		KhachHangModel model = khDAO.KhachHangLogin(dienthoai, matkhau);
 		return model;
+	}
+	
+	@GetMapping(path = "/api/khachhang/getallKh")
+	public List<KhachHangModel> DanhSachKhachHang() {
+		List<KhachHangModel> lst = khDAO.DanhSachKhachHang();
+		return lst;
+	}
+	
+	@GetMapping(path = "/api/khachhang/getKhById")
+	public KhachHangModel GetKhachHangById(int idKH) {
+		KhachHangModel model = khDAO.GetKhachHangById(idKH);
+		return model;
+	}
+	
+	@PostMapping(path = "/api/khachhang/addkhachhang")
+	public int ThemKhachHang(@RequestBody KhachHangModel model) {
+		try {
+			int res = khDAO.AddKhachHang(model);
+			return res;
+		}
+		catch(Exception ex) {
+			return 0;
+		}
+	}
+	
+	@PostMapping(path = "/api/khachhang/suakhachhang")
+	public int SuaKhachHang(@RequestBody KhachHangModel model) {
+		try {
+			int res = khDAO.EditKhachHang(model);
+			return res;
+		}
+		catch(Exception ex) {
+			return 0;
+		}
+	}
+	
+	@GetMapping(path = "/api/khachhang/xoakhachhang")
+	public int XoaKhachHang(int idKH) {
+		try {
+			int res = khDAO.DeleteKhachHang(idKH);
+			return res;
+		}
+		catch(Exception ex) {
+			return 0;
+		}
 	}
 }

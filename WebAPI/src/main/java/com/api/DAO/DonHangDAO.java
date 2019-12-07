@@ -117,12 +117,51 @@ public class DonHangDAO {
 	}
 	
 	
+	///Chuc nang dung cho trang Admin
+	//Lay tat ca danh sach don hang
+	public List<DonDatHangModel> LayTatCaDonHang(){
+		try {
+			Session session = this.sessionFactory.getCurrentSession();
+			String hql = "From DonDatHang";
+			Query query = session.createQuery(hql);
+			
+			List<DonDatHang> lstDDH = query.list();
+			List<DonDatHangModel> lstModel = new ArrayList<DonDatHangModel>();
+			DonDatHangModel model;
+			for (DonDatHang item : lstDDH) {
+				model = new DonDatHangModel(item.getId(),item.getKhachhang().getId() , item.getNgayDat(), item.getNgayXuat(), item.getTinhTrangDon(), item.getTongTien());
+				lstModel.add(model);
+			}
+			return lstModel;
+		}
+		catch(Exception ex) {
+			return null;
+		}
+	}
 	
 	
+	public int XacNhanDonHang(int idDH) {
+		Session session = this.sessionFactory.getCurrentSession();
+		long millis=System.currentTimeMillis();  
+		java.sql.Date date =new java.sql.Date(millis);  
+		String sql = "Update DonDatHang set NgayXuat = ?, TinhTrangDon = 1 where id = ?";
+		Query query = session.createSQLQuery(sql);
+		query.setParameter(0, date);
+		query.setParameter(1, idDH);
+		
+		return query.executeUpdate();
+	}
 	
-	
-	
-	
+	public int HuyDonHang(int idDH) {
+		Session session = this.sessionFactory.getCurrentSession();
+		long millis=System.currentTimeMillis();  
+		java.sql.Date date =new java.sql.Date(millis);  
+		String sql = "Update DonDatHang set TinhTrangDon = -1 where id = ?";
+		Query query = session.createSQLQuery(sql);
+		query.setParameter(0, idDH);
+		
+		return query.executeUpdate();
+	}
 	
 	
 	

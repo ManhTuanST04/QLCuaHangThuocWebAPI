@@ -3,17 +3,17 @@ package com.api.model;
 import javax.persistence.Column;
 
 public class KhachHangModel {
-private int id;
+	private int id;
 
-	private String DienThoai;
+	private String dienThoai;
 	
-	private String MatKhau;
+	private String matKhau;
 
-	private String Ten;
+	private String ten;
 
-	private String Email;
+	private String email;
 	
-	private String DiaChi;
+	private String diaChi;
 	
 	public KhachHangModel() {
 		super();
@@ -23,11 +23,11 @@ private int id;
 	public KhachHangModel(int id, String dienThoai, String matKhau, String ten, String email, String diaChi) {
 		super();
 		this.id = id;
-		DienThoai = dienThoai;
-		MatKhau = matKhau;
-		Ten = ten;
-		Email = email;
-		DiaChi = diaChi;
+		this.dienThoai = dienThoai;
+		this.matKhau = matKhau;
+		this.ten = ten;
+		this.email = email;
+		this.diaChi = diaChi;
 	}
 
 	public int getId() {
@@ -39,43 +39,44 @@ private int id;
 	}
 
 	public String getDienThoai() {
-		return DienThoai;
+		return dienThoai;
 	}
 
 	public void setDienThoai(String dienThoai) {
-		DienThoai = dienThoai;
+		this.dienThoai = dienThoai;
 	}
 
 	public String getMatKhau() {
-		return MatKhau;
+		return matKhau;
 	}
 
 	public void setMatKhau(String matKhau) {
-		MatKhau = matKhau;
+		this.matKhau = matKhau;
 	}
 
 	public String getTen() {
-		return Ten;
+		return ten;
 	}
 
 	public void setTen(String ten) {
-		Ten = ten;
+		this.ten = ten;
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 
 	public String getDiaChi() {
-		return DiaChi;
+		return diaChi;
 	}
 
 	public void setDiaChi(String diaChi) {
-		DiaChi = diaChi;
+		this.diaChi = diaChi;
 	}
+
 	
 }

@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation .RestController;
 
 import com.api.DAO.*;
 import com.api.helper.RedisCacheProduct;
+import com.api.helper.RedisCacheProduct2;
 import com.api.model.CacheTimeModel;
 import com.api.model.ProductModel;
 
@@ -50,10 +51,11 @@ public class ProductController {
 	
 	@GetMapping(value = "/productdetail" , produces = "application/json")
 	public ProductModel GetProductById(int id){
-		List<ProductModel> lstPro = null;
-		//RedisCacheProduct rch = new RedisCacheProduct();
-		//lstPro = rch.GetListDataFromCache(proDAO, redisTemp, "lstpro");
-		ProductModel pro = proDAO.GetProductById(id);
+		//List<ProductModel> lstPro = null;
+		RedisCacheProduct2 rch = new RedisCacheProduct2();
+		
+		ProductModel pro = rch.GetListDataFromCache(proDAO, redisTemp,id);
+		//ProductModel pro = proDAO.GetProductById(id);
 		
 		return pro;
 	}
