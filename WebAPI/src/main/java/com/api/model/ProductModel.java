@@ -2,24 +2,18 @@ package com.api.model;
 
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 public class ProductModel implements Serializable{
 	public ProductModel() {
 		
 	}
 	
-	public ProductModel(int id, String name, int price, int weight, String color) {
+	public ProductModel(int id, String name, int price, int weight, String color, String image) {
 		this.id = id;
 		Name = name;
 		Price = price;
 		Weight = weight;
 		Color = color;
+		Image = image;
 	}
 
 	private int id;
@@ -32,6 +26,8 @@ public class ProductModel implements Serializable{
 	
 	private String Color;
 
+	private String Image;
+	
 	public int getId() {
 		return id;
 	}
@@ -71,5 +67,14 @@ public class ProductModel implements Serializable{
 	public void setColor(String color) {
 		Color = color;
 	}
+
+	public String getImage() {
+		return Image;
+	}
+
+	public void setImage(String image) {
+		Image = image;
+	}
+	
 
 }

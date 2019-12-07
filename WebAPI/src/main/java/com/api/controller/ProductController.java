@@ -41,12 +41,22 @@ public class ProductController {
 	@GetMapping(value = "/lstpro" , produces = "application/json")
 	public List<ProductModel> GetListProduct(){
 		List<ProductModel> lstPro = null;
-		RedisCacheProduct rch = new RedisCacheProduct();
-		lstPro = rch.GetListDataFromCache(proDAO, redisTemp, "lstpro");
+		//RedisCacheProduct rch = new RedisCacheProduct();
+		//lstPro = rch.GetListDataFromCache(proDAO, redisTemp, "lstpro");
+		lstPro = proDAO.GetListProduct();
 		
 		return lstPro;
 	}
 	
+	@GetMapping(value = "/productdetail" , produces = "application/json")
+	public ProductModel GetProductById(int id){
+		List<ProductModel> lstPro = null;
+		//RedisCacheProduct rch = new RedisCacheProduct();
+		//lstPro = rch.GetListDataFromCache(proDAO, redisTemp, "lstpro");
+		ProductModel pro = proDAO.GetProductById(id);
+		
+		return pro;
+	}
 	
 }
 

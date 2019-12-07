@@ -30,12 +30,19 @@ public class ProductDAO {
 		ProductModel model;
 		List<ProductModel> lstpro = new ArrayList<ProductModel>();
 		for (Product product : lst) {
-			model = new ProductModel(product.getId(), product.getName(), product.getPrice(), product.getWeight(), product.getColor());
+			model = new ProductModel(product.getId(), product.getName(), product.getPrice(), product.getWeight(), product.getColor(), product.getImage());
 			lstpro.add(model);
 		}
 		//session.getTransaction().commit();
 		//session.close();
 		return lstpro;
+	}
+	
+	public ProductModel GetProductById(int id) {
+		Session session = sessionFactory.getCurrentSession();
+		Product product = session.get(Product.class, id);
+		ProductModel proModel = new ProductModel(product.getId(), product.getName(), product.getPrice(), product.getWeight(), product.getColor(), product.getImage());
+		return proModel;
 	}
 	
 //	public Product GetPro(int id) {
