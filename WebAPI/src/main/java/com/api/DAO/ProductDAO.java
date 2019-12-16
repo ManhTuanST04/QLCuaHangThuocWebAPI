@@ -45,25 +45,30 @@ public class ProductDAO {
 		return proModel;
 	}
 	
-//	public Product GetPro(int id) {
-//		 Session session = this.sessionFactory.getCurrentSession();
-//		 Product pro = session.get(Product.class, id);
-//		 return pro;
-//	}
-//	
-//	public List<Object[]> GetPer(int role) {
-//		Session session = this.sessionFactory.getCurrentSession();
-//		String hql = "select r.id, r.name FROM Role r INNER JOIN r.permissions as per where per.id = 1";
-//		Query query = session.createQuery(hql);
-//		List<Object[]> results = query.list();
-//		return results;
-//	}
-//	
-//	public List<Permission> GetPerUser(int user) {
-//		Session session = this.sessionFactory.getCurrentSession();
-//		String hql = "select distinct(per.id) , per.name FROM Permission per INNER JOIN per.roles rol INNER JOIN rol.users user where user.id = 1";
-//		Query query = session.createQuery(hql);
-//		List<Permission> results = query.list();
-//		return results;
-//	}
+	public int AddProduct(ProductModel model) {
+		Session session = sessionFactory.getCurrentSession();
+		Product pro = new Product();
+		pro.setName(model.getName());
+		pro.setPrice(model.getPrice());
+		pro.setWeight(model.getWeight());
+		pro.setColor(model.getColor());
+		pro.setImage(model.getImage());
+		
+		session.save(pro);
+		return 1;
+	}
+	
+	public int UpdateProduct(ProductModel model) {
+		Session session = sessionFactory.getCurrentSession();
+		Product pro = new Product();
+		pro.setId(model.getId());
+		pro.setName(model.getName());
+		pro.setPrice(model.getPrice());
+		pro.setWeight(model.getWeight());
+		pro.setColor(model.getColor());
+		pro.setImage(model.getImage());
+		
+		session.saveOrUpdate(pro);
+		return 1;
+	}
 }

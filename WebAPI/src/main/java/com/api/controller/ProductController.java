@@ -27,6 +27,7 @@ import com.api.helper.RedisCacheProduct;
 import com.api.helper.RedisCacheProduct2;
 import com.api.model.CacheTimeModel;
 import com.api.model.ProductModel;
+import com.api.model.UserModel;
 
 @RestController
 @RequestMapping("/api/product")
@@ -54,12 +55,37 @@ public class ProductController {
 		//List<ProductModel> lstPro = null;
 		RedisCacheProduct2 rch = new RedisCacheProduct2();
 		
-		ProductModel pro = rch.GetListDataFromCache(proDAO, redisTemp,id);
-		//ProductModel pro = proDAO.GetProductById(id);
+		//ProductModel pro = rch.GetListDataFromCache(proDAO, redisTemp,id);
+		ProductModel pro = proDAO.GetProductById(id);
 		
 		return pro;
 	}
 	
+	@PostMapping(path = "/addproduct")
+	public int AddPro(@RequestBody ProductModel model) {
+		try {
+			int res = proDAO.AddProduct(model);	
+			logger.info("Them san pham");
+			return res;
+		}
+		catch (Exception ex) {
+			logger.error(ex.getMessage());
+			return 0;
+		}
+	}
+	
+	@PostMapping(path = "/updateproduct")
+	public int UpdatePro(@RequestBody ProductModel model) {
+		try {
+			int res = proDAO.UpdateProduct(model);	
+			logger.info("Update san pham");
+			return res;
+		}
+		catch (Exception ex) {
+			logger.error(ex.getMessage());
+			return 0;
+		}
+	}
 }
 
 

@@ -64,6 +64,13 @@ public class DonDatHangModel {
 	public void setTongTien(int tongTien) {
 		this.tongTien = tongTien;
 	}
+	
+	
+	
+	public DonDatHangModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public DonDatHangModel(int id, Date ngayDat, Date ngayXuat, int tinhTrangDon, int tongTien) {
 		super();
