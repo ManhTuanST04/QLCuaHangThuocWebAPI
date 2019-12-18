@@ -156,9 +156,10 @@ public class DonHangDAO {
 		Session session = this.sessionFactory.getCurrentSession();
 		long millis=System.currentTimeMillis();  
 		java.sql.Date date =new java.sql.Date(millis);  
-		String sql = "Update DonDatHang set TinhTrangDon = -1 where id = ?";
+		String sql = "Update DonDatHang set NgayXuat = ?, TinhTrangDon = -1 where id = ?";
 		Query query = session.createSQLQuery(sql);
-		query.setParameter(0, idDH);
+		query.setParameter(0, date);
+		query.setParameter(1, idDH);
 		
 		return query.executeUpdate();
 	}

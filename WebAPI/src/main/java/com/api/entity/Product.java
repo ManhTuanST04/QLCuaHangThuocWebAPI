@@ -16,8 +16,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.CacheConcurrencyStrategy;
-
 @Entity
 @Table(name = "product")
 public class Product {
@@ -41,11 +39,11 @@ public class Product {
 	@Column(name = "image", nullable=true)
 	private String Image;
 
-	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinTable(name = "chitietdonhang", 
-    joinColumns = { @JoinColumn(name = "idSP") }, 
-    inverseJoinColumns = {@JoinColumn(name = "idDH") })
-	private Collection<DonDatHang> lstDonDatHang;
+//	@ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//	@JoinTable(name = "chitietdonhang", 
+//    joinColumns = { @JoinColumn(name = "idSP") }, 
+//    inverseJoinColumns = {@JoinColumn(name = "idDH") })
+//	private Collection<DonDatHang> lstDonDatHang;
 	
 
 	public Product() {
@@ -53,8 +51,7 @@ public class Product {
 	}
 
 
-	public Product(int id, String name, int price, int weight, String color, String image,
-			Collection<DonDatHang> lstDonDatHang) {
+	public Product(int id, String name, int price, int weight, String color, String image) {
 		super();
 		this.id = id;
 		Name = name;
@@ -62,7 +59,7 @@ public class Product {
 		Weight = weight;
 		Color = color;
 		Image = image;
-		this.lstDonDatHang = lstDonDatHang;
+		//this.lstDonDatHang = lstDonDatHang;
 	}
 
 
@@ -126,14 +123,14 @@ public class Product {
 	}
 
 
-	public Collection<DonDatHang> getLstDonDatHang() {
-		return lstDonDatHang;
-	}
-
-
-	public void setLstDonDatHang(Collection<DonDatHang> lstDonDatHang) {
-		this.lstDonDatHang = lstDonDatHang;
-	}
+//	public Collection<DonDatHang> getLstDonDatHang() {
+//		return lstDonDatHang;
+//	}
+//
+//
+//	public void setLstDonDatHang(Collection<DonDatHang> lstDonDatHang) {
+//		this.lstDonDatHang = lstDonDatHang;
+//	}
 
 	
 
