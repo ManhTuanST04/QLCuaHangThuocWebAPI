@@ -124,13 +124,15 @@ public class UserDAO {
 	public int DeleteUser(int id) {
 		Session session = this.sessionFactory.getCurrentSession();
 		//session.beginTransaction();
-		String hql = "delete from User where id = :id";
-		Query query = session.createQuery(hql);
+		String sql = "delete from user_role where userid = :id";
+		Query query = session.createSQLQuery(sql);
 		query.setParameter("id", id);
 		int res = query.executeUpdate();
-		//session.getTransaction().commit();
-		//session.close();
-		return res;
+		
+		User user = session.get(User.class, id);
+		session.delete(user);
+		
+		return 1;
 	}
 	
 	public List<PermissionModel> GetPerUser(int userId) {

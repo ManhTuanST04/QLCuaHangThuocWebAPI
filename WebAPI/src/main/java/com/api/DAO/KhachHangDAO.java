@@ -11,6 +11,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.api.entity.DonDatHang;
 import com.api.entity.KhachHang;
 import com.api.model.KhachHangModel;
 
@@ -87,6 +88,12 @@ public class KhachHangDAO {
 	
 	public int DeleteKhachHang(int idKH) {
 		Session session = this.sessionFactory.getCurrentSession();
+		//Xóa khách hàng thì xóa hết các đơn hàng của người này
+		String hql = "delete from DonDatHang where idKH = :idKH";
+		Query query = session.createQuery(hql);
+		query.setParameter("idKH", idKH);
+		query.executeUpdate();
+		
 		KhachHang kh = session.get(KhachHang.class, idKH);
 		session.delete(kh);
 		return 1;
